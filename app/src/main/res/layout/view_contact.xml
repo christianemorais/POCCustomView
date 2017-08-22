@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/message_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:clickable="true">
+
+    <chris.poccustomview.ContactBadgeView
+        android:id="@+id/contact_badge"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_circle"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        app:imageProfile="@drawable/ic_face_default"
+        app:initials="CS"
+        app:initialsSize="40sp" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/contact_badge"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="christiane@email.com"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_primary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from"
+        android:layout_toRightOf="@id/contact_badge"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="E-mail importante"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_primary"
+        android:layout_toRightOf="@id/contact_badge"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="Descrição tosca e resumida"
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <declare-styleable name="ContactBadgeView">
+        <attr name="initials" format="string" />
+        <attr name="imageProfile" format="reference" />
+        <attr name="initialsSize" format="dimension"/>
+    </declare-styleable>
+</resources>
